@@ -32,9 +32,9 @@
         <!-- Sidebar - Brand -->
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
             <div class="sidebar-brand-icon rotate-n-15">
-                <i class="fas fa-laugh-wink"></i>
+                <i class="fas fa-crown"></i>
             </div>
-            <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+            <div class="sidebar-brand-text mx-3">gow <sup>pro</sup></div>
         </a>
 
         <!-- Divider -->
@@ -273,28 +273,23 @@
 
             <!-- Begin Page Content -->
             <div class="container-fluid">
-
                 @yield('main-content')
-
             </div>
-            <!-- /.container-fluid -->
-
         </div>
         <!-- End of Main Content -->
 
         <!-- Footer -->
         <footer class="sticky-footer bg-white">
             <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Alejandro RH {{ now()->year }}</span>
+                <div class="text-center my-auto">
+                    A dedicated project by <a href="http://github.com/mezothic" target="_blank">Mezothic Labs</a> {{ now()->year }}
+                </span>
                 </div>
             </div>
         </footer>
         <!-- End of Footer -->
 
     </div>
-    <!-- End of Content Wrapper -->
-
 </div>
 
 <!-- Scroll to Top Button-->

@@ -29,8 +29,6 @@ class ProfileController extends Controller
             'new_password' => 'nullable|min:8|max:12|required_with:current_password',
             'password_confirmation' => 'nullable|min:8|max:12|required_with:new_password|same:new_password'
         ]);
-
-
         $user = User::findOrFail(Auth::user()->id);
         $user->name = $request->input('name');
         $user->last_name = $request->input('last_name');
@@ -43,9 +41,7 @@ class ProfileController extends Controller
                 return redirect()->back()->withInput();
             }
         }
-
         $user->save();
-
         return redirect()->route('profile')->withSuccess('Profile updated successfully.');
     }
 }
